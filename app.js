@@ -28,6 +28,12 @@ console.log('----------------2. 合格判定----------------');
  */
 let math = 50;
 let english = 100;
+let total = math + english;
+if (math >= 60 && english >= 60 && total >= 140){
+	console.log('合格');
+}else{
+	console.log('不合格');
+}
 
 
 console.log('----------------3. 数を数える----------------');
