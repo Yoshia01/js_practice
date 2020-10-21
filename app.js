@@ -71,6 +71,17 @@ console.log('----------------5. FizzBuzz----------------');
  * 3と5の両方の倍数の場合はFizzBuzz
  * と表示するようにしてください。
  */
+ for(let i=1;i<=100;i++){
+ 	if (i % 3===0 && i % 5=== 0){
+ 		console.log('FizzBuzz');
+ 	}else if(i % 3===0){
+ 		console.log('buzz');
+ 	}else if(i % 5===0){
+ 		console.log('buzz');
+ 	}else{
+ 		console.log(i);
+ 	}
+ }
 
 console.log('----------------6.九九----------------');
 /**
