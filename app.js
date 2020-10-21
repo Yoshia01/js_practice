@@ -118,6 +118,18 @@ console.log('----------------1. 女湯問題----------------');
  * genderは male, female, otherのいずれかにしてください。
  * 女湯に入れる場合は「入れます」、入れない場合は「入れない」と表示してください。
  */
+ let customer = {age: 28, gender: 'male'};
+
+if (customer['gender'] === 'female')  {
+  console.log('入れます');
+} else {
+  if (customer['age'] <= 3) {
+    console.log('入れます');
+  } else {
+    console.log('入れません');
+  }
+}
+
 
 console.log('----------------2. 素数を表示するプログラム----------------');
 /**
@@ -126,3 +138,15 @@ console.log('----------------2. 素数を表示するプログラム------------
  * 素数とは1とその数以外では割り切れない数です。
  * 言い方をかえると約数が2つしかない数です。
  */
+
+ for (let i = 2; i < 100; i++){
+  for (let j = 2; j <= i; j++) {
+    if (i % j === 0 && j < i) {
+      break;
+    } 
+
+    if (i === j) {
+      console.log(i);
+    }
+  }
+}
